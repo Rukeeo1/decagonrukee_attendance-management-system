@@ -1,0 +1,52 @@
+
+#body{
+	background-image: url("./img/plane.jpg");
+	background-repeat:no-repeat;	
+	background-size: cover;
+	alignment-baseline: center;
+	}
+#navbar{
+		background-color: rgba(128,0,0,0.1);
+}
+
+#navbarSupportedContent{
+	background-color: rgba(128,0,0,0.1);
+}
+
+#decagon{
+	font-weight: bolder;
+}
+
+#meeting{
+	font-size: 25px;
+	font-weight: bolder;
+	color:;
+}
+
+#myform{
+    background-color: ;
+    width: 60%;
+    margin:0 auto;
+    padding: 30px;
+    color: aliceblue;
+    border-radius: 2px;
+}
+
+#formdiv{
+    
+    padding: 20px;
+    border-radius: 2px;
+
+}
+
+#footer{
+	background-color: rgba(128,0,0,0.1);
+}
+
+#footerimg{
+	width: 130px;
+	height: 70px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
