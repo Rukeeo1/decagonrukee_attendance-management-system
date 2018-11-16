@@ -1,9 +1,145 @@
 {
   "user": [
     {
-      "name": "stanley",
-      "email": "stanley",
+      "name": "david",
+      "email": "mogbeyidavid@gmail.com",
+      "password": "rrrrrrrr",
+      "id": 6
+    },
+    {
+      "name": "zzzzzzzzzzz",
+      "email": "zzzzzzz@gmail.com",
+      "password": "aaaaaaaaaa",
+      "id": 7
+    },
+    {
+      "name": "rukeeojigbo",
+      "email": "ojigbo@gmail.com",
+      "password": "iiiiiiii",
+      "id": 8
+    },
+    {
+      "name": "rukeeojigbo",
+      "email": "ojigbo@gmail.com",
+      "password": "iiiiiiii",
+      "id": 9
+    },
+    {
+      "name": "austine",
+      "email": "austine@gmail.com",
+      "password": "oooooooo",
+      "id": 10
+    },
+    {
+      "name": "austine",
+      "email": "austine@gmail.com",
+      "password": "oooooooo",
+      "id": 11
+    },
+    {
+      "name": "austine",
+      "email": "austine@gmail.com",
       "password": "aaaaaaaa",
+      "id": 12
+    },
+    {
+      "name": "austine",
+      "email": "austine@gmail.com",
+      "password": "aaaaaaaa",
+      "id": 13
+    },
+    {
+      "name": "willochs",
+      "email": "willochs@gmail.com",
+      "password": "jjjjjjjj",
+      "id": 14
+    },
+    {
+      "name": "baang",
+      "email": "jason@gmail.com",
+      "password": "aaaaaaaa",
+      "id": 15
+    },
+    {
+      "name": "baang",
+      "email": "jason@gmail.com",
+      "password": "aaaaaaaa",
+      "id": 16
+    },
+    {
+      "name": "rukeeojigbo",
+      "email": "rukee@gmail.com",
+      "password": "aaaaaaaa",
+      "id": 17
+    },
+    {
+      "name": "rukeeojigbo",
+      "email": "rukee@gmail.com",
+      "password": "aaaaaaaa",
+      "id": 18
+    },
+    {
+      "name": "seyi",
+      "email": "techiefrank@gmail.com",
+      "password": "aaaaaaaa",
+      "id": 19
+    },
+    {
+      "name": "seyi",
+      "email": "techiefrank@gmail.com",
+      "password": "aaaaaaaa",
+      "id": 20
+    },
+    {
+      "name": "rukee",
+      "email": "mogbeyidavid@gmail.com",
+      "password": "wwwwwwww",
+      "id": 21
+    },
+    {
+      "name": "rukee",
+      "email": "mogbeyidavid@gmail.com",
+      "password": "wwwwwwww",
+      "id": 22
+    },
+    {
+      "name": "jason",
+      "email": "zzzzzzz@gmail.com",
+      "password": "aaaaaaaaa",
+      "id": 23
+    },
+    {
+      "name": "jason",
+      "email": "zzzzzzz@gmail.com",
+      "password": "aaaaaaaaa",
+      "id": 24
+    }
+  ],
+  "admin": [
+    {
+      "email": "admin@gmail.com",
+      "password": "12345"
+    }
+  ],
+  "status": [],
+  "rollcall": [
+    {
+      "user": "mogbeyidavid@gmail.com",
+      "status": "Absent",
+      "id": 1
+    },
+    {
+      "user": "zzzzzzz@gmail.com",
+      "status": "Present",
+      "id": 2
+    }
+  ],
+  "meeting": [
+    {
+      "time": "01:01",
+      "date": "2018-11-11",
+      "venue": "association avenue",
+      "describe": "we need to see",
       "id": 1
     }
   ]

@@ -1,6 +1,6 @@
-$(document).ready(function(){
-    $("#btnid").click(function(){
-        alert("we are ready");
+ $(document).ready(function(){
+    $("#home").click(function(){
+        window.location.replace('./create.html');
     });
 
     //style related codes
@@ -9,7 +9,35 @@ $(document).ready(function(){
     $('#body').css('background-image', 'url("./img/plane.jpg")','no-repeat');
     $('#hidewelcome').css('background', 'rgba(128,0,0,0)');
     $("#myform").css({background:'rgba(128,0,0,0.1)', fontweight:'bold', borderradius: '20px'});
+    $("#textbox").css({float: "", background:"", fontweight:'bold', borderradius: '20px', width: "500px"});
     
+    //hide signup form and show
+        $('#myform').hide();
+        $('#textdiv').hide();
+
+        //onclick create to show textarea
+        $( "#create" ).click(function() {
+            $('#myform').show();
+            // $('#meetingtable').hide();
+            // $("#meeting").hide();
+            // $("#Decagon").hide();
+            $('#create').hide();
+
+          });
+          //onclik add to append and onclik to remove
+
+          $( "#add" ).click(function() {
+            alert( "Handler for .click() called." );
+            $('#meeting').hide();
+            $('#create').hide();
+          ;
+
+          });
+    //remove button
+          
+   
+    //hide signup form and show
+
     //hide footer/tab
     var tanhide= $('#mytable').hide();
     //var hidfoot= $('#footer')
@@ -113,37 +141,56 @@ $(document).ready(function(){
             "password" :password,
             
         };
-  
+
+        //
+        $.ajax({
+            type: "POST",
+            url: "http://localhost:3000/user",
+            data: worker,
+            success: function(response) {
+                console.log(response)
+                alert('welcome');
+            window.location.replace('./login.html');
+            
+            }, error: function(response){
+                console.log(response)
+          //      alert('this is failed');
+                
+            }
+        });
+        //
 
  
 
         console.log(worker);
-        alert(worker.email + 'is good');
+       // alert(worker.email + ' is good');
         if(name === ''){
-            alert('please enter your name');
+          //  alert('please enter your name');
         }
         else if (email === ''){
-            alert('please enter email');
+            //alert('please enter email');
         }
         else if (password === ''){
-            alert('please enter your password');
+            //alert('please enter your password');
         }
         else if (confirmedPassword !== password){
-            alert('passwords don\'t match');
+            //alert('passwords don\'t match');
         }
         else{
-            alert('everything will be okay');
+    
            // ajax below
             $.ajax({
                 type: "POST",
                 url: "http://localhost:3000/user",
                 data: worker,
-                success: function() {
-                    alert('welcome');
+                success: function(response) {
+                    console.log(response)
+                    //alert('welcome');
                     // window.location.replace('./login.html');
                 
-                }, error: function(){
-                    alert('this is failed');
+                }, error: function(response){
+                    console.log(response)
+              //      alert('this is failed');
                     
                 }
             });
@@ -152,5 +199,43 @@ $(document).ready(function(){
 
     });
 
+    //my new addition for admin
+      $("#admin").click(function(){
+        //alert("we are ready");
+        window.location.replace('./admin_login.html');
+    });
+    
+    $("#login").click(function(){
+        alert("we are ready");
+        window.location.replace('./login.html');
+    });
+//Member login login
+
+//append to div meeting details
+$.ajax({
+    type: "GET",
+    url: "http://localhost:3000/meeting",
+    dataType: "JSON",
+    success: function(response) {
+        console.log("Data: ", JSON.stringify(response));
+        for (let i=0; i < response.length; i++){
+            //console.log('llllllll')
+            let time = response[i].time;
+            let date= response[i].date;
+            let venue= response[i].venue;
+            let description = response[i].describe;
+            var markup = "<tr><td>" + time + "</td><td>" + date + "</td><td>" +venue+ "</td></tr>";
+            $("table tbody").append(markup);   
+            $('#meeting').append(description);        
+
+        };
+
+    },
+    error: function(response) {
+        alert(JSON.stringify(response));
+    }
+    //alert(('.rukee').val());
+});
+//
     
 });

@@ -1,0 +1,9 @@
+admin login //
+admin js already exist.
+user login already exist
+user list
+create meeting
+//
+create html page
+create a link in tindex.html..
+on sucessful login direct people to admin page

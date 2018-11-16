@@ -5,6 +5,28 @@
 	background-size: cover;
 	alignment-baseline: center;
 	}
+
+#landing{
+	color:white;
+	align:center;
+}
+#createform{
+	width: 500px;
+	margin-left: 350px;
+}	
+
+#textdiv{
+	margin-left:300px;
+
+	
+}
+
+#myform{
+	position: relative;
+	margin-top: 0%;
+
+}
+
 #navbar{
 		background-color: rgba(128,0,0,0.1);
 }
@@ -20,11 +42,11 @@
 #meeting{
 	font-size: 25px;
 	font-weight: bolder;
-	color:;
+
 }
 
 #myform{
-    background-color: ;
+    
     width: 60%;
     margin:0 auto;
     padding: 30px;
